@@ -1,0 +1,46 @@
+// CSE 110     : 75326
+// Assignment  : ASSIGNMENT 01
+// Author      : DONOVAN MOSES / 1210366219
+// Description : PIZZA
+
+import java.util.Scanner;
+
+public class pizza {
+    public static void main(String[] args) {  
+        // declare and instantiate a Scanner
+        Scanner in = new Scanner(System.in);
+
+        
+        // declare and initialize variables
+        
+
+
+       
+        
+        // prompt for and collect inputs
+        System.out.println("Please provide the information below to receive your results:");
+        System.out.println("Number of Pizzas Purchased: ");
+        int pizzasPurchased = in.nextInt();
+        System.out.println("Number of slices per Pizza: ");
+        int slicesPerPizza = in.nextInt();
+        System.out.println("Number of adults: ");
+        int adults = in.nextInt();
+        System.out.print("Number of children ");
+        int children = in.nextInt();
+        
+        
+        // compute required values
+        int totalSlices = pizzasPurchased * slicesPerPizza;
+        int totalAdultSlices = 2 * adults;
+        int totalChildrenSlices = totalSlices - totalAdultSlices;
+        int slicesPerChild = totalChildrenSlices / children;
+      
+
+        // display required outputs
+        System.out.println("Total number of slices of pizza: " + totalSlices);
+        System.out.println("Total number of slices that will be given to the adults: " + totalAdultSlices);
+        System.out.println("Total number of slices available for the children: " + totalChildrenSlices);
+        System.out.println("Number of slices each child will get: " + slicesPerChild);
+        System.out.println("Number of slices left over: " + (totalSlices - totalAdultSlices - (slicesPerChild * children)));
+    }
+}
