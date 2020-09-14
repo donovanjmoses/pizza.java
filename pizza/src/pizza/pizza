@@ -1,8 +1,3 @@
-// CSE 110     : 75326
-// Assignment  : ASSIGNMENT 01
-// Author      : DONOVAN MOSES / 1210366219
-// Description : PIZZA
-
 import java.util.Scanner;
 
 public class pizza {
